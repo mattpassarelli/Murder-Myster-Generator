@@ -1,9 +1,11 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import characterReducer from "./characterSlice";
+import motiveReducer from "./MotivesSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    characters: characterReducer,
+    motives: motiveReducer
   },
 });
 
